@@ -1,0 +1,10 @@
+[project]
+name = "bedrock-rag-chat"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aws-cdk-lib>=2.243.0",
+    "constructs>=10.5.1",
+]

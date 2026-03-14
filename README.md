@@ -79,6 +79,7 @@ Bedrock Knowledge Bases がサポートする形式
 
 ```
 bedrock-rag-chat/
+├── pyproject.toml              # uv 依存管理
 ├── cdk/                        # CDK インフラ定義
 │   ├── app.py
 │   ├── cdk.json
@@ -89,10 +90,9 @@ bedrock-rag-chat/
 │   └── handler.py
 ├── frontend/                   # Streamlit アプリ
 │   └── app.py
+├── scripts/                    # ユーティリティスクリプト
+│   └── create_index.py
 ├── docs/                       # 検索対象ドキュメント（S3 アップロード用）
-│   ├── aws/
-│   ├── leetcode/
-│   └── notes/
 └── tests/
 ```
 
