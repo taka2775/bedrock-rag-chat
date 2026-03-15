@@ -1,6 +1,9 @@
 # CDK
 cdk.out/
 
+# Memo
+memo.md
+
 # Python
 .venv/
 __pycache__/
