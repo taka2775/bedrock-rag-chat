@@ -6,9 +6,11 @@ import boto3
 bedrock_agent_runtime = boto3.client("bedrock-agent-runtime")
 
 KNOWLEDGE_BASE_ID = os.environ["KNOWLEDGE_BASE_ID"]
+ACCOUNT_ID = boto3.client("sts").get_caller_identity()["Account"]
+REGION = os.environ.get("AWS_REGION", "us-east-1")
 MODEL_ARN = os.environ.get(
     "MODEL_ARN",
-    "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-3-5-sonnet-20241022-v2:0",
+    f"arn:aws:bedrock:{REGION}:{ACCOUNT_ID}:inference-profile/us.anthropic.claude-sonnet-4-20250514-v1:0",
 )
 
 

@@ -1,6 +1,9 @@
 # CDK
 cdk.out/
 
+# Environment
+.env
+
 # Memo
 memo.md
 

@@ -30,6 +30,7 @@ class ApiStack(Stack):
                     "bedrock:RetrieveAndGenerate",
                     "bedrock:Retrieve",
                     "bedrock:InvokeModel",
+                    "bedrock:GetInferenceProfile",
                 ],
                 resources=["*"],
             )
