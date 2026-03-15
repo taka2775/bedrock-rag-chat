@@ -90,8 +90,6 @@ bedrock-rag-chat/
 │   └── handler.py
 ├── frontend/                   # Streamlit アプリ
 │   └── app.py
-├── scripts/                    # ユーティリティスクリプト
-│   └── create_index.py
 ├── docs/                       # 検索対象ドキュメント（S3 アップロード用）
 └── tests/
 ```
